@@ -8,6 +8,7 @@ import Sidebar from '../components/Sidebar.astro';
 import CtaVoltaPix from '../components/CtaVoltaPix.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 import { getPublishedPosts } from '../lib/posts';
+import { slugify } from '../lib/slugify';
 
 const posts = await getPublishedPosts();
 ---
@@ -295,7 +296,7 @@ const posts = await getPublishedPosts();
 										{categoriesList.map((cat, idx) => (
 											<>
 												{idx > 0 && <span class="meta-dot"></span>}
-												<a href={`/blog/category/${cat.toLowerCase()}/`} class="meta-cat-link">
+												<a href={`/blog/category/${slugify(cat)}/`} class="meta-cat-link">
 													{cat}
 												</a>
 											</>
