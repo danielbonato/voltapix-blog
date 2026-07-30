@@ -2,6 +2,7 @@
 import { Image } from 'astro:assets';
 import FormattedDate from './FormattedDate.astro';
 import { getPublishedPosts } from '../lib/posts';
+import { slugify } from '../lib/slugify';
 
 const posts = await getPublishedPosts();
 
@@ -20,7 +21,7 @@ const categoryList = Array.from(categoryCountsMap.entries())
 	.map(([name, count]) => ({
 		name,
 		count,
-		slug: name.toLowerCase().replace(/[^a-z0-9]+/g, '-')
+		slug: slugify(name)
 	}))
 	.sort((a, b) => b.count - a.count || a.name.localeCompare(b.name));
 

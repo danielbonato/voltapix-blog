@@ -8,6 +8,7 @@ import CtaVoltaPix from '../../../components/CtaVoltaPix.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../../../consts';
 import { Image } from 'astro:assets';
 import { getPublishedPosts } from '../../../lib/posts';
+import { slugify } from '../../../lib/slugify';
 
 export async function getStaticPaths() {
 	const allPosts = await getPublishedPosts();
@@ -20,7 +21,7 @@ export async function getStaticPaths() {
 
 	return Array.from(uniqueCategories).map((cat) => {
         const catName = String(cat);
-		const slug = catName.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+		const slug = slugify(catName);
 		const filteredPosts = allPosts.filter((post) => {
             const postCats = post.data.categories || (post.data.category ? [post.data.category] : ['Geral']);
             return postCats.includes(catName);
@@ -304,7 +305,7 @@ const { categoryName, posts } = Astro.props;
 										{categoriesList.map((cat: string, idx: number) => (
 											<>
 												{idx > 0 && <span class="meta-dot"></span>}
-												<a href={`/blog/category/${cat.toLowerCase().replace(/[^a-z0-9]+/g, '-')}/`} class="meta-cat-link">
+												<a href={`/blog/category/${slugify(cat)}/`} class="meta-cat-link">
 													{cat}
 												</a>
 											</>
