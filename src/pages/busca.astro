@@ -4,7 +4,7 @@ import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
 import Sidebar from '../components/Sidebar.astro';
-import CtaAgendaCerto from '../components/CtaAgendaCerto.astro';
+import CtaVoltaPix from '../components/CtaVoltaPix.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 
 const allPosts = await getCollection('blog');
@@ -25,14 +25,14 @@ const searchIndex = allPosts.map(post => ({
 		<BaseHead title={`Resultados da Busca | ${SITE_TITLE}`} description={SITE_DESCRIPTION} />
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
 		<style>
 			:root {
-				--looka-primary: #ea580c;
-				--looka-dark: #0f172a;
+				--looka-primary: #004AEA;
+				--looka-dark: #0b0f19;
 				--looka-text: #334155;
-				--font-sans: 'Plus Jakarta Sans', sans-serif;
-				--font-syne: 'Plus Jakarta Sans', sans-serif;
+				--font-sans: 'Inter', sans-serif;
+				--font-syne: 'Manrope', sans-serif;
 			}
 
 			body {
@@ -96,8 +96,8 @@ const searchIndex = allPosts.map(post => ({
             }
 
             .search-result-card:hover {
-                border-color: #ea580c;
-                box-shadow: 0 4px 15px rgba(234, 88, 12, 0.1);
+                border-color: #004AEA;
+                box-shadow: 0 4px 15px rgba(0, 74, 234, 0.1);
             }
 
             .result-img-wrapper {
@@ -133,7 +133,7 @@ const searchIndex = allPosts.map(post => ({
 
             .result-meta {
                 font-size: 0.85rem;
-                color: #ea580c;
+                color: #004AEA;
                 font-weight: 600;
             }
 
@@ -149,7 +149,7 @@ const searchIndex = allPosts.map(post => ({
                 text-decoration: none;
             }
             .search-result-card:hover .result-title a {
-                color: #ea580c;
+                color: #004AEA;
             }
 
             .result-desc {
@@ -204,7 +204,7 @@ const searchIndex = allPosts.map(post => ({
 				</aside>
 			</div>
 		</main>
-		<CtaAgendaCerto />
+		<CtaVoltaPix />
 		<Footer />
 
         <script is:inline define:vars={{ searchIndex }}>

@@ -1,0 +1,153 @@
+---
+// VoltaPix CTA Section
+---
+
+<section class="vp-cta-section">
+	<div aria-hidden="true" class="vp-cta-glow"></div>
+	<div aria-hidden="true" class="vp-cta-grain"></div>
+	<div class="vp-cta-container">
+		<div>
+			<h2 class="vp-cta-heading">
+				Reembolso corporativo sem planilha 
+				<span class="vp-cta-highlight"> via WhatsApp.</span>
+			</h2>
+			<p class="vp-cta-subheading">
+				Sua equipe envia o recibo pelo WhatsApp, a IA extrai valor e CNPJ em segundos e você aprova em lote. Experimente grátis por 45 dias — sem cartão de crédito.
+			</p>
+			<div class="vp-cta-actions">
+				<a class="vp-cta-btn-primary group" href="https://voltapix.com.br/signup?origem=blog" target="_blank" rel="noopener noreferrer">
+					Testar por 45 dias grátis
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-arrow-right" aria-hidden="true">
+						<path d="M5 12h14"></path>
+						<path d="m12 5 7 7-7 7"></path>
+					</svg>
+				</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+<style>
+	.vp-cta-section {
+		position: relative;
+		overflow: hidden;
+		background-color: #0b0f19;
+		padding: 6rem 0;
+	}
+	@media (min-width: 640px) {
+		.vp-cta-section {
+			padding: 8rem 0;
+		}
+	}
+
+	.vp-cta-glow {
+		pointer-events: none;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		height: 500px;
+		width: 900px;
+		transform: translate(-50%, -50%);
+		border-radius: 9999px;
+		background-color: rgba(0, 74, 234, 0.25);
+		filter: blur(130px);
+	}
+
+	.vp-cta-grain {
+		pointer-events: none;
+		position: absolute;
+		inset: 0;
+		opacity: 0.05;
+		mix-blend-mode: overlay;
+		background-image: url('data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjAwIDIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZmlsdGVyIGlkPSJub2lzZUZpbHRlciI+PGZlVHVyYnVsZW5jZSB0eXBlPSJmcmFjdGFsTm9pc2UiIGJhc2VGcmVxdWVuY3k9IjAuNjUiIG51bU9jdGF2ZXM9IjMiIHN0aXRjaFRpbGVzPSJzdGl0Y2giLz48L2ZpbHRlcj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWx0ZXI9InVybCgjbm9pc2VGaWx0ZXIpIi8+PC9zdmc+');
+	}
+
+	.vp-cta-container {
+		position: relative;
+		margin: 0 auto;
+		max-width: 48rem;
+		padding-left: 1rem;
+		padding-right: 1rem;
+		text-align: center;
+	}
+	@media (min-width: 640px) {
+		.vp-cta-container {
+			padding-left: 1.5rem;
+			padding-right: 1.5rem;
+		}
+	}
+
+	.vp-cta-heading {
+		font-family: 'Manrope', sans-serif;
+		font-size: 2.25rem;
+		font-weight: 800;
+		line-height: 1.15;
+		letter-spacing: -0.025em;
+		color: #ffffff;
+		margin: 0;
+		text-wrap: balance;
+	}
+	@media (min-width: 640px) {
+		.vp-cta-heading {
+			font-size: 3.5rem;
+		}
+	}
+
+	.vp-cta-highlight {
+		background-image: linear-gradient(to right, #60a5fa, #004AEA);
+		-webkit-background-clip: text;
+		background-clip: text;
+		color: transparent;
+	}
+
+	.vp-cta-subheading {
+		margin: 1.5rem auto 0;
+		max-width: 36rem;
+		font-size: 1.125rem;
+		line-height: 1.625;
+		color: #94a3b8;
+	}
+
+	.vp-cta-actions {
+		margin-top: 2.5rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 1rem;
+	}
+	@media (min-width: 640px) {
+		.vp-cta-actions {
+			flex-direction: row;
+		}
+	}
+
+	.vp-cta-btn-primary {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.5rem;
+		border-radius: 0.75rem;
+		background-color: #004AEA;
+		padding: 1rem 2.5rem;
+		font-size: 1rem;
+		font-weight: 700;
+		color: #ffffff;
+		text-decoration: none;
+		box-shadow: 0 20px 25px -5px rgba(0, 74, 234, 0.35), 0 8px 10px -6px rgba(0, 74, 234, 0.3);
+		transition: all 0.2s;
+	}
+	.vp-cta-btn-primary:hover {
+		background-color: #0038C4;
+		box-shadow: 0 20px 25px -5px rgba(0, 74, 234, 0.5), 0 8px 10px -6px rgba(0, 74, 234, 0.5);
+		transform: translateY(-2px);
+	}
+
+	.lucide-arrow-right {
+		height: 1.25rem;
+		width: 1.25rem;
+		transition: transform 0.2s;
+	}
+	.vp-cta-btn-primary:hover .lucide-arrow-right {
+		transform: translateX(0.25rem);
+	}
+</style>

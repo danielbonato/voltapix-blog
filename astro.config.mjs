@@ -7,7 +7,7 @@ import { defineConfig, fontProviders } from 'astro/config';
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://blog.agendacerto.com.br',
+	site: 'https://blog.voltapix.com.br',
 	adapter: vercel(),
 	integrations: [mdx(), sitemap()],
 	fonts: [

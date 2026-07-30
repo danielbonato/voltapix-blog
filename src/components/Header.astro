@@ -1,73 +1,92 @@
 ---
 import { SITE_TITLE } from '../consts';
 ---
-<header class="agenda-header">
-	<div class="agenda-header-container">
-		<a class="agenda-logo-link" href="/">
-			<!-- Use absolute URL as requested -->
-			<img src="https://www.agendacerto.com.br/agendacerto-white.svg" alt="Agenda Certo" class="agenda-logo"/>
+<header class="voltapix-header">
+	<div class="voltapix-header-container">
+		<a class="voltapix-logo-link" href="/">
+			<img src="/voltapix-logo-quad.svg" alt="VoltaPix" class="voltapix-logo-icon" />
+			<span class="voltapix-brand-name">VoltaPix</span>
 		</a>
-		<div class="agenda-actions">
-			<a class="agenda-signup-btn" href="https://www.agendacerto.com.br/?origem=blog" target="_blank" rel="noopener noreferrer">
+		<div class="voltapix-actions">
+			<a class="voltapix-main-site-link" href="https://voltapix.com.br" target="_blank" rel="noopener noreferrer">
 				Visite o Site
+			</a>
+			<a class="voltapix-signup-btn" href="https://voltapix.com.br/signup?origem=blog" target="_blank" rel="noopener noreferrer">
+				Testar Grátis
 			</a>
 		</div>
 	</div>
 </header>
 
 <style>
-	.agenda-header {
-		background-color: #111827; /* Dark background to contrast the white logo */
+	.voltapix-header {
+		background-color: #0b0f19;
 		border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 		width: 100%;
 	}
-	.agenda-header-container {
+	.voltapix-header-container {
 		margin: 0 auto;
 		display: flex;
-		height: 4rem; /* h-16 */
-		max-width: 80rem; /* max-w-7xl */
+		height: 4rem;
+		max-width: 80rem;
 		align-items: center;
 		justify-content: space-between;
 		padding-left: 1rem;
 		padding-right: 1rem;
 	}
 	@media (min-width: 640px) {
-		.agenda-header-container { padding-left: 1.5rem; padding-right: 1.5rem; }
+		.voltapix-header-container { padding-left: 1.5rem; padding-right: 1.5rem; }
 	}
 	@media (min-width: 1024px) {
-		.agenda-header-container { padding-left: 2rem; padding-right: 2rem; }
+		.voltapix-header-container { padding-left: 2rem; padding-right: 2rem; }
 	}
-	.agenda-logo-link {
+	.voltapix-logo-link {
 		display: flex;
 		align-items: center;
+		gap: 0.65rem;
 		text-decoration: none;
 	}
-	.agenda-logo {
-		height: 1.75rem; /* h-7 */
+	.voltapix-logo-icon {
+		height: 2rem;
 		width: auto;
 	}
-	.agenda-actions {
+	.voltapix-brand-name {
+		font-family: 'Manrope', sans-serif;
+		font-size: 1.25rem;
+		font-weight: 800;
+		color: #ffffff;
+		letter-spacing: -0.02em;
+	}
+	.voltapix-actions {
 		display: flex;
 		align-items: center;
-		gap: 0.5rem; /* gap-2 */
+		gap: 1rem;
 	}
-	.agenda-signup-btn {
-		white-space: nowrap; /* whitespace-nowrap */
-		border-radius: 0.5rem; /* rounded-lg */
-		background-color: #ea580c; /* bg-orange-600 */
-		padding: 0.5rem 0.875rem; /* px-3.5 py-2 */
-		font-size: 0.875rem; /* text-sm */
-		font-weight: 600; /* font-semibold */
-		color: #ffffff; /* text-white */
+	.voltapix-main-site-link {
+		font-size: 0.875rem;
+		font-weight: 500;
+		color: #94a3b8;
 		text-decoration: none;
-		box-shadow: 0 10px 15px -3px rgba(234, 88, 12, 0.25); /* shadow-lg shadow-orange-600/25 */
+		transition: color 0.2s;
+	}
+	.voltapix-main-site-link:hover {
+		color: #ffffff;
+	}
+	.voltapix-signup-btn {
+		white-space: nowrap;
+		border-radius: 0.5rem;
+		background-color: #004AEA;
+		padding: 0.5rem 1rem;
+		font-size: 0.875rem;
+		font-weight: 600;
+		color: #ffffff;
+		text-decoration: none;
+		box-shadow: 0 8px 16px -3px rgba(0, 74, 234, 0.35);
 		transition: all 0.2s;
 	}
-	@media (min-width: 640px) {
-		.agenda-signup-btn { padding-left: 1rem; padding-right: 1rem; }
-	}
-	.agenda-signup-btn:hover {
-		background-color: #c2410c; /* hover:bg-orange-700 */
-		box-shadow: 0 10px 15px -3px rgba(234, 88, 12, 0.4);
+	.voltapix-signup-btn:hover {
+		background-color: #0038C4;
+		box-shadow: 0 10px 20px -3px rgba(0, 74, 234, 0.5);
+		transform: translateY(-1px);
 	}
 </style>

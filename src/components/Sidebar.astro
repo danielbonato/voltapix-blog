@@ -100,15 +100,15 @@ const recentPosts = posts.slice(0, 3);
 		</div>
 	</section>
 
-	<!-- 4. Agenda Certo CTA Widget -->
+	<!-- 4. VoltaPix CTA Widget -->
 	<section class="cta-banner-widget">
 		<div class="cta-banner-glow" aria-hidden="true"></div>
 		<div class="cta-banner-content">
-			<img src="/logo-agenda-certo.svg" alt="Agenda Certo" class="cta-banner-logo" />
-			<h3 class="cta-title">Quer atrair mais clientes?</h3>
-			<p class="cta-sub">Teste o Agenda Certo grátis por 30 dias, sem cartão de crédito.</p>
-			<a href="https://www.agendacerto.com.br/cadastro?origem=blog" class="cta-btn" target="_blank" rel="noopener noreferrer">
-				Criar Conta
+			<img src="/voltapix-logo-branca.svg" alt="VoltaPix" class="cta-banner-logo" />
+			<h3 class="cta-title">Gestão de despesas sem planilha</h3>
+			<p class="cta-sub">Reembolso por WhatsApp, extração por IA e aprovação em lote. Experimente por 45 dias grátis.</p>
+			<a href="https://voltapix.com.br/signup?origem=blog" class="cta-btn" target="_blank" rel="noopener noreferrer">
+				Testar Grátis
 				<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
 					<path d="M7 7h10v10"></path>
 					<path d="M7 17 17 7"></path>
@@ -132,10 +132,10 @@ const recentPosts = posts.slice(0, 3);
 	}
 
 	.widget-title {
-		font-family: var(--font-secondary, 'Syne', sans-serif);
+		font-family: 'Manrope', sans-serif;
 		font-size: 1.25rem;
 		font-weight: 700;
-		color: #000e30;
+		color: #0b0f19;
 		padding-bottom: 0.85rem;
 		margin: 0 0 1.25rem 0;
 		border-bottom: 1px solid rgba(229, 233, 240, 0.8);
@@ -162,8 +162,8 @@ const recentPosts = posts.slice(0, 3);
 	}
 
 	.search-input:focus {
-		border-color: #ea580c;
-		box-shadow: 0 0 0 3px rgba(234, 88, 12, 0.12);
+		border-color: #004AEA;
+		box-shadow: 0 0 0 3px rgba(0, 74, 234, 0.12);
 	}
 
 	.search-input::placeholder {
@@ -188,7 +188,7 @@ const recentPosts = posts.slice(0, 3);
 	}
 
 	.search-btn:hover {
-		background-color: #ea580c;
+		background-color: #004AEA;
 		color: #ffffff;
 	}
 
@@ -223,7 +223,7 @@ const recentPosts = posts.slice(0, 3);
 
 	.category-item:hover .cat-arrow {
 		transform: translateX(3px);
-		color: #ea580c;
+		color: #004AEA;
 	}
 
 	.cat-link {
@@ -236,7 +236,7 @@ const recentPosts = posts.slice(0, 3);
 	}
 
 	.category-item:hover .cat-link {
-		color: #ea580c;
+		color: #004AEA;
 	}
 
 	.cat-badge {
@@ -254,8 +254,8 @@ const recentPosts = posts.slice(0, 3);
 	}
 
 	.category-item:hover .cat-badge {
-		background-color: rgba(234, 88, 12, 0.1);
-		color: #ea580c;
+		background-color: rgba(0, 74, 234, 0.1);
+		color: #004AEA;
 	}
 
 	/* Recent Posts Widget */
@@ -309,11 +309,11 @@ const recentPosts = posts.slice(0, 3);
 		font-size: 0.875rem;
 		font-weight: 600;
 		line-height: 1.35;
-		color: #000e30;
+		color: #0b0f19;
 	}
 
 	.recent-post-title a {
-		color: #000e30;
+		color: #0b0f19;
 		text-decoration: none;
 		transition: color 0.2s ease;
 		display: -webkit-box;
@@ -323,7 +323,7 @@ const recentPosts = posts.slice(0, 3);
 	}
 
 	.recent-post-item:hover .recent-post-title a {
-		color: #ea580c;
+		color: #004AEA;
 	}
 
 	.recent-post-date {
@@ -332,12 +332,12 @@ const recentPosts = posts.slice(0, 3);
 		font-weight: 400;
 	}
 
-	/* Agenda Certo CTA Widget */
+	/* VoltaPix CTA Widget */
 	.cta-banner-widget {
 		position: relative;
 		overflow: hidden;
 		border-radius: 12px;
-		background-color: #030712;
+		background-color: #0b0f19;
 		box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
 	}
 
@@ -350,7 +350,7 @@ const recentPosts = posts.slice(0, 3);
 		width: 320px;
 		transform: translateX(-50%);
 		border-radius: 9999px;
-		background-color: rgba(246, 82, 5, 0.35);
+		background-color: rgba(0, 74, 234, 0.35);
 		filter: blur(70px);
 	}
 
@@ -365,13 +365,13 @@ const recentPosts = posts.slice(0, 3);
 	}
 
 	.cta-banner-logo {
-		height: 22px;
+		height: 24px;
 		width: auto;
 		margin-bottom: 0.25rem;
 	}
 
 	.cta-title {
-		font-family: var(--font-secondary, 'Syne', sans-serif);
+		font-family: 'Manrope', sans-serif;
 		font-size: 1.35rem;
 		font-weight: 700;
 		color: #ffffff;
@@ -383,6 +383,7 @@ const recentPosts = posts.slice(0, 3);
 		font-size: 0.875rem;
 		color: rgba(255, 255, 255, 0.75);
 		margin: 0;
+		line-height: 1.5;
 	}
 
 	.cta-btn {
@@ -391,8 +392,8 @@ const recentPosts = posts.slice(0, 3);
 		gap: 0.5rem;
 		width: fit-content;
 		padding: 0.65rem 1.25rem;
-		background-color: #f65205;
-		border: 1px solid #f65205;
+		background-color: #004AEA;
+		border: 1px solid #004AEA;
 		border-radius: 6px;
 		color: #ffffff;
 		text-decoration: none;
@@ -403,8 +404,8 @@ const recentPosts = posts.slice(0, 3);
 	}
 
 	.cta-btn:hover {
-		background-color: #d94600;
-		border-color: #d94600;
+		background-color: #0038C4;
+		border-color: #0038C4;
 		transform: translateY(-2px);
 	}
 </style>

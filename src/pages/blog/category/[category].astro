@@ -4,7 +4,7 @@ import Footer from '../../../components/Footer.astro';
 import FormattedDate from '../../../components/FormattedDate.astro';
 import Header from '../../../components/Header.astro';
 import Sidebar from '../../../components/Sidebar.astro';
-import CtaAgendaCerto from '../../../components/CtaAgendaCerto.astro';
+import CtaVoltaPix from '../../../components/CtaVoltaPix.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../../../consts';
 import { Image } from 'astro:assets';
 import { getPublishedPosts } from '../../../lib/posts';
@@ -40,17 +40,17 @@ const { categoryName, posts } = Astro.props;
 <html lang="pt-BR">
 	<head>
 		<BaseHead title={`${categoryName} | ${SITE_TITLE}`} description={SITE_DESCRIPTION} />
-		<!-- Import Google Fonts for Plus Jakarta Sans -->
+		<!-- Import Google Fonts for Manrope & Inter -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
 		<style>
 			:root {
-				--looka-primary: #ea580c;
-				--looka-dark: #0f172a;
+				--looka-primary: #004AEA;
+				--looka-dark: #0b0f19;
 				--looka-text: #334155;
-				--font-sans: 'Plus Jakarta Sans', sans-serif;
-				--font-syne: 'Plus Jakarta Sans', sans-serif;
+				--font-sans: 'Inter', sans-serif;
+				--font-syne: 'Manrope', sans-serif;
 			}
 
 			body {
@@ -325,7 +325,7 @@ const { categoryName, posts } = Astro.props;
 				</aside>
 			</div>
 		</main>
-		<CtaAgendaCerto />
+		<CtaVoltaPix />
 		<Footer />
 	</body>
 </html>
