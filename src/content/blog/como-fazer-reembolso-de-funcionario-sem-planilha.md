@@ -52,4 +52,4 @@ A política interna da empresa deve determinar as regras. Em geral, reembolsos s
 
 ---
 
-Quer eliminar as planilhas de reembolso da sua empresa? [Teste o VoltaPix grátis por 45 dias](https://voltapix.com.br/signup?origem=blog), sem cartão de crédito.
+Quer eliminar as planilhas de reembolso da sua empresa? [Teste o VoltaPix grátis por 45 dias](https://voltapix.com.br/signup?origem=blog_artigo), sem cartão de crédito.

@@ -47,4 +47,4 @@ Não. O reembolso tem natureza indenizatória, portanto não integra o salário 
 
 ---
 
-Quer garantir aprovações rápidas e sem atrito de prazo? [Teste o VoltaPix grátis por 45 dias](https://voltapix.com.br/signup?origem=blog), sem cartão de crédito.
+Quer garantir aprovações rápidas e sem atrito de prazo? [Teste o VoltaPix grátis por 45 dias](https://voltapix.com.br/signup?origem=blog_artigo), sem cartão de crédito.

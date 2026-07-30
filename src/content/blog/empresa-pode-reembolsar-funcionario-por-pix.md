@@ -39,4 +39,4 @@ Por segurança e compliance, o dinheiro da empresa deve ser transferido diretame
 
 ---
 
-Quer enviar ordens de pagamento Pix pré-formatadas para seu banco? [Teste o VoltaPix grátis por 45 dias](https://voltapix.com.br/signup?origem=blog), sem cartão de crédito.
+Quer enviar ordens de pagamento Pix pré-formatadas para seu banco? [Teste o VoltaPix grátis por 45 dias](https://voltapix.com.br/signup?origem=blog_artigo), sem cartão de crédito.

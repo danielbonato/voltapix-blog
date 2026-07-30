@@ -36,4 +36,4 @@ Agrupar o pagamento de reembolsos internos e despesas de fornecedores em um úni
 
 ---
 
-Quer simplificar a rotina da sua equipe de campo hoje mesmo? [Teste o VoltaPix grátis por 45 dias](https://voltapix.com.br/signup?origem=blog), sem cartão de crédito.
+Quer simplificar a rotina da sua equipe de campo hoje mesmo? [Teste o VoltaPix grátis por 45 dias](https://voltapix.com.br/signup?origem=blog_artigo), sem cartão de crédito.
