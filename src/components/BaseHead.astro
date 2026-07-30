@@ -14,7 +14,7 @@ interface Props {
 
 const { title, description, image, article = false } = Astro.props;
 
-// Format page title to always include "Blog Agenda Certo" on internal pages
+// Format page title to always include "Blog VoltaPix" on internal pages
 const pageTitle = title === SITE_TITLE || title.includes(SITE_TITLE)
 	? title
 	: `${title} | ${SITE_TITLE}`;
@@ -43,13 +43,20 @@ const schemaData = article
 			'description': description,
 			'image': imageURL.href,
 			'url': canonicalURL.href,
+			'inLanguage': 'pt-BR',
 			'publisher': {
 				'@type': 'Organization',
 				'name': 'VoltaPix',
+				'url': 'https://voltapix.com.br',
 				'logo': {
 					'@type': 'ImageObject',
 					'url': new URL('/voltapix-logo-quad.svg', siteUrl).href,
 				},
+			},
+			'author': {
+				'@type': 'Organization',
+				'name': 'VoltaPix',
+				'url': 'https://voltapix.com.br',
 			},
 	  }
 	: {
@@ -58,17 +65,33 @@ const schemaData = article
 			'name': SITE_TITLE,
 			'description': description,
 			'url': siteUrl.href,
+			'inLanguage': 'pt-BR',
+			'publisher': {
+				'@type': 'Organization',
+				'name': 'VoltaPix',
+				'url': 'https://voltapix.com.br',
+				'logo': {
+					'@type': 'ImageObject',
+					'url': new URL('/voltapix-logo-quad.svg', siteUrl).href,
+				},
+			},
 	  };
 ---
 
 <!-- Global Metadata -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="theme-color" content="#004aea" />
+<meta name="author" content="VoltaPix" />
 
-<!-- Favicon & Icons -->
-<link rel="icon" type="image/svg+xml" href="/voltapix-logo-quad.svg" />
+<!-- Favicon & Web App Icons -->
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
 <link rel="shortcut icon" href="/favicon.ico" />
-<link rel="apple-touch-icon" sizes="180x180" href="/voltapix-logo-quad.svg" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+
 <link rel="sitemap" href="/sitemap-index.xml" />
 <link
 	rel="alternate"
@@ -129,3 +152,4 @@ const schemaData = article
 
 <!-- Schema.org JSON-LD for Google -->
 <script type="application/ld+json" set:html={JSON.stringify(schemaData)} />
+

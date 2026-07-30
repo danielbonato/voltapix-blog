@@ -1,0 +1,21 @@
+{
+  "name": "Blog VoltaPix",
+  "short_name": "VoltaPix",
+  "description": "Conteúdos, guias e estratégias sobre reembolso corporativo, gestão de despesas e finanças PME sem planilha.",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#004aea",
+  "background_color": "#0b0f19",
+  "display": "standalone",
+  "start_url": "/"
+}
