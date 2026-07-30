@@ -1,7 +1,7 @@
 ---
 title: "Como fazer reembolso de funcionário sem planilha"
 description: "Descubra como estruturar o processo de reembolso corporativo sem depender de planilhas manuais, eliminando erros de prazo e recibos perdidos."
-pubDate: 2026-08-05
+pubDate: 2026-07-30
 heroImage: "../../assets/reembolso-sem-planilha.png"
 categories: ["Gestão de Despesas", "Finanças PME"]
 author: "Equipe VoltaPix"
