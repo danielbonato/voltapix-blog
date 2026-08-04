@@ -5,11 +5,46 @@ const today = new Date();
 <footer class="voltapix-footer">
 	<div class="voltapix-footer-container">
 		<img src="/voltapix-logo-branca.svg" alt="VoltaPix" class="voltapix-footer-logo"/>
+
+		<div class="voltapix-footer-social">
+			<a
+				href="https://voltapix.com.br"
+				target="_blank"
+				rel="noopener noreferrer"
+				aria-label="Site"
+				title="Site"
+				class="voltapix-footer-icon"
+			>
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg>
+			</a>
+			<a
+				href="https://www.instagram.com/usevoltapix/"
+				target="_blank"
+				rel="noopener noreferrer"
+				aria-label="Instagram"
+				title="Instagram"
+				class="voltapix-footer-icon"
+			>
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
+			</a>
+			<a
+				href="https://www.facebook.com/profile.php?id=61591767954979"
+				target="_blank"
+				rel="noopener noreferrer"
+				aria-label="Facebook"
+				title="Facebook"
+				class="voltapix-footer-icon"
+			>
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+			</a>
+		</div>
+
 		<p class="voltapix-footer-text">
-			VoltaPix é uma marca operada por DANIEL BONATO QUINTANILHA (Nemex) - CNPJ 65.646.800/0001-20.
+			VoltaPix é uma marca operada por DANIEL BONATO QUINTANILHA (Nemex) - CNPJ 65.646.800/0001-20. E-mail: danielbonato@nemex.com.br
 		</p>
 		<div class="voltapix-footer-links">
 			<a class="voltapix-footer-link" href="https://voltapix.com.br/terms?origem=blog_footer" target="_blank" rel="noopener noreferrer">Termos de Uso</a>
+			<span>&middot;</span>
 			<a class="voltapix-footer-link" href="https://voltapix.com.br/privacy?origem=blog_footer" target="_blank" rel="noopener noreferrer">Política de Privacidade</a>
 		</div>
 		<a target="_blank" rel="noopener noreferrer" class="voltapix-footer-credit" href="http://www.nemex.com.br">
@@ -21,8 +56,8 @@ const today = new Date();
 <style>
 	.voltapix-footer {
 		background-color: #111827; /* bg-gray-900 */
-		padding-top: 1.5rem; /* py-6 */
-		padding-bottom: 1.5rem;
+		padding-top: 2.5rem; /* py-10 */
+		padding-bottom: 2.5rem;
 		margin-top: auto; /* mt-auto */
 		border-top: 1px solid rgba(255, 255, 255, 0.1); /* border-t border-white/10 */
 		width: 100%;
@@ -32,7 +67,7 @@ const today = new Date();
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		gap: 1rem; /* gap-4 */
+		gap: 1.5rem; /* gap-6 */
 		text-align: center;
 		width: 100%;
 		max-width: 80rem; /* container mx-auto */
@@ -43,6 +78,34 @@ const today = new Date();
 		height: 1.5rem; /* h-6 */
 		width: auto;
 		opacity: 0.9;
+	}
+	.voltapix-footer-social {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 1rem; /* gap-4 */
+	}
+	.voltapix-footer-icon {
+		display: flex;
+		height: 2.75rem; /* h-11 */
+		width: 2.75rem; /* w-11 */
+		align-items: center;
+		justify-content: center;
+		border-radius: 9999px;
+		border: 1px solid rgba(255, 255, 255, 0.1);
+		background-color: rgba(255, 255, 255, 0.05);
+		color: #cbd5e1; /* text-slate-300 */
+		transition: all 0.2s;
+	}
+	.voltapix-footer-icon svg {
+		height: 1.25rem; /* h-5 */
+		width: 1.25rem; /* w-5 */
+	}
+	.voltapix-footer-icon:hover {
+		transform: translateY(-0.125rem);
+		border-color: rgba(2, 74, 216, 0.4); /* voltapix blue/40 */
+		background-color: rgba(2, 74, 216, 0.1); /* voltapix blue/10 */
+		color: #024ad8; /* VoltaPix electric blue */
 	}
 	.voltapix-footer-text {
 		font-size: 0.75rem; /* text-xs */
