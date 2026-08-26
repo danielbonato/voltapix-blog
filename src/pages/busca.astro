@@ -1,5 +1,5 @@
 ---
-import { getCollection } from 'astro:content';
+import { getPublishedPosts } from '../lib/posts';
 import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
@@ -7,7 +7,12 @@ import Sidebar from '../components/Sidebar.astro';
 import CtaVoltaPix from '../components/CtaVoltaPix.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 
-const allPosts = await getCollection('blog');
+// Mesmo filtro de todas as outras páginas: post com pubDate futura fica de
+// fora até um rebuild acontecer depois da data. Sem isso o índice da busca
+// lista artigo agendado e linka pra /blog/<slug>/, que o getStaticPaths não
+// gerou ainda, ou seja: resultado de busca que cai em 404, e título de
+// artigo futuro exposto antes da data de publicação.
+const allPosts = await getPublishedPosts();
 const searchIndex = allPosts.map(post => ({
 	id: post.id,
 	title: post.data.title,
